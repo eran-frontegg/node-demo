@@ -1,0 +1,21 @@
+{
+  "compilerOptions": {
+    "target": "esnext",
+    "module": "CommonJS",
+    "outDir": "./dist",
+    "allowJs": true,
+    "sourceMap": true,
+    "esModuleInterop": true,
+    "moduleResolution": "Node",
+    "forceConsistentCasingInFileNames": true,
+    "lib": [
+      "dom",
+      "esnext"
+    ],
+    "strict": true,
+    "skipLibCheck": true,
+    "typeRoots": ["src/@types", "./node_modules/@types", "./node_modules/@frontegg/client/src/@types"]
+  },
+  "exclude": ["node_modules"],
+  "include": ["./src/**/*"]
+}
