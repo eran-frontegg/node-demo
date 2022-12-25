@@ -2,8 +2,8 @@ import {Express, Request} from "express";
 import { withAuthentication, AuditsClient, FronteggContext, FronteggAuthenticator } from '@frontegg/client';
 
 FronteggContext.init({
-    FRONTEGG_API_KEY: 'b974b90a-fac2-4158-82de-647bdc0e6122',
-    FRONTEGG_CLIENT_ID:'1123dc6c-5499-4b2d-9939-e18bf32a310e'
+    FRONTEGG_API_KEY: <string>process.env.FRONTEGG_API_KEY,
+    FRONTEGG_CLIENT_ID: <string>process.env.FRONTEGG_CLIENT_ID
 });
 const authenticator = new FronteggAuthenticator();
 authenticator.init(FronteggContext.getContext().FRONTEGG_CLIENT_ID, FronteggContext.getContext().FRONTEGG_API_KEY);
